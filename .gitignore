@@ -1,0 +1,12 @@
+config/config.yaml
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+dataset/crag_task_1_and_2_dev_v4.jsonl
+dataset/crag_task_1_and_2_dev_v4.jsonl.bz2
+dataset/global_index.pkl
+Assignment2.pdf
+frontend/node_modules/
