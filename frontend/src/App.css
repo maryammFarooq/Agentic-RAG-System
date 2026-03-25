@@ -1,0 +1,119 @@
+/* Global page styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main container */
+.app-container {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+h1 {
+  color: #222;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #444;
+}
+
+/* Form styling */
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Select dropdown */
+select {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+/* Textarea */
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Button */
+button {
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Results container */
+.results-container {
+  margin-top: 20px;
+}
+
+/* Answer box */
+.results-container > div:first-child {
+  border-left: 4px solid #007bff;
+}
+
+/* Score badge */
+.results-container span {
+  font-weight: 500;
+}
+
+/* Context code block */
+pre {
+  font-family: "Courier New", monospace;
+  line-height: 1.5;
+}
+
+/* Scrollbar for context */
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-weight: 500;
+}

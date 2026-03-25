@@ -1,0 +1,132 @@
+/* Modern, clean, and visually appealing UI improvements for the RAG frontend */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.app-container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  margin-top: 48px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: #1a237e;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #444;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+label {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+select, textarea {
+  padding: 10px 12px;
+  border-radius: 7px;
+  border: 1px solid #b0bec5;
+  font-size: 15px;
+  background: #f7fafc;
+  transition: border 0.2s;
+}
+
+select:focus, textarea:focus {
+  border: 1.5px solid #1976d2;
+  outline: none;
+}
+
+textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px 0;
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.13);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.results-container {
+  margin-top: 24px;
+}
+
+.results-container > div:first-child {
+  border-left: 5px solid #1976d2;
+  background: #f1f8ff;
+  padding: 18px 20px;
+  border-radius: 7px;
+}
+
+.results-container h2, .results-container h3 {
+  color: #1976d2;
+  margin-bottom: 8px;
+}
+
+.results-container span {
+  font-weight: 600;
+}
+
+pre {
+  background: #23272f;
+  color: #e3e3e3;
+  padding: 18px;
+  border-radius: 7px;
+  font-size: 1em;
+  overflow-x: auto;
+  margin-top: 0;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 18px 6px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
